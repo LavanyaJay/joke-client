@@ -10,20 +10,39 @@ body {
 .joke {
   height: 80px;
   width: 850px;
-  border: 1px solid black;
+
   margin-left: 200px;
   margin-top: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   text-align: center;
+  border-radius: 25px;
+  background: rgb(199, 154, 60);
+  background: radial-gradient(
+    circle,
+    rgba(199, 154, 60, 1) 0%,
+    rgba(241, 242, 157, 1) 37%
+  );
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .jokeImg {
   height: 200px;
   width: 200px;
-  border: 1px solid black;
+
   margin: auto;
   text-align: center;
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .image {
   max-height: 100%;
@@ -33,13 +52,27 @@ body {
 .punchLine {
   height: 80px;
   width: 850px;
-  border: 1px solid black;
+
   margin-left: 200px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
   text-align: center;
+  border-radius: 25px;
+
+  background: rgb(241, 242, 157);
+  background: radial-gradient(
+    circle,
+    rgba(241, 242, 157, 1) 0%,
+    rgba(255, 255, 255, 0.9934348739495799) 100%
+  );
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .btn {
   height: 30px;
@@ -49,4 +82,10 @@ body {
   background: yellow;
   font-size: 12px;
   font-weight: bolder;
+  -webkit-box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
+    -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
