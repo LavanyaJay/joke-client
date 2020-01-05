@@ -6,13 +6,17 @@ import jokeStore from "../stores/joke";
 
 const JokeContainer = observer(
   class JokeContainer extends Component {
+    state = { id: 1 };
     componentDidMount() {
-      getJoke();
+      const id = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+      getJoke(id);
+      console.log("id: " + id);
+      this.setState({ id });
     }
     render() {
       return (
         <div>
-          <Joke joke={jokeStore.joke} />
+          <Joke joke={jokeStore.joke} id={this.state.id} />
         </div>
       );
     }
