@@ -29,6 +29,18 @@ const Joke = observer(
             {<img src={joke.image} className="image" alt="" />}
           </div>
           {t}
+          <button
+            onClick={() => {
+              this.handler();
+              getJoke();
+              setTimeout(() => {
+                this.setState({ rendered: true });
+              }, 3000);
+            }}
+            className="btn"
+          >
+            Next Joke
+          </button>
         </div>
       );
     }
