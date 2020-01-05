@@ -10,7 +10,15 @@ const JokeContainer = observer(
       getJoke();
     }
     render() {
-      return <div>{jokeStore.joke.joke}</div>;
+      return (
+        <div>
+          <div className="joke">{jokeStore.joke.joke}</div>
+          <div className="jokeImg">
+            {<img src={jokeStore.joke.image} className="image" alt="" />}
+          </div>
+          ;
+        </div>
+      );
     }
   }
 );
