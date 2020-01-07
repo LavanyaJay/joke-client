@@ -11,7 +11,7 @@
 
 This joke application, randomly displays jokes releated to programming, one at a time. The punchline for the joke gets displayed after 3 seconds. The user can move on to the next joke through the 'Next Joke' button.
 
-Here's a little demo...
+Here's a little demo..
 
 ![gif](./demo/jokes.gif)
 
