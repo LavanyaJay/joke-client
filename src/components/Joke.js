@@ -50,6 +50,7 @@ const Joke = observer(
 
       return (
         <div>
+          <h1 className="header">Cool Jokes</h1>
           <div className="joke">{joke.joke}</div>
           <div className="jokeImg">
             {<img src={joke.image} className="image" alt="" />}
