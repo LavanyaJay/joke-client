@@ -24,7 +24,7 @@ Here's a little demo..
 ## Technologies used for this project
 
 1. React with `create-react-app`
-2. `mobx` and `react-mobx` to set up MobX store and dispatch actions
+2. `mobx` and `react-mobx` to set up MobX store
 3. `fetch` to fetch data from the database
 
 ## Contributor
