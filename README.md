@@ -13,7 +13,7 @@ This joke application, randomly displays jokes releated to programming, one at a
 
 Here's a little demo..
 
-![gif](./demo/jokes.gif)
+![gif](./demo/joke.gif)
 
 ## How to start
 
