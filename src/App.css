@@ -77,6 +77,11 @@ body {
     -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
+.lowerBar {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
 .btn {
   height: 30px;
   width: 70;
@@ -91,4 +96,7 @@ body {
   box-shadow: 8px 0px 0px 0px #dcd0c0, 0px 8px 0px 0px #b1938b,
     -8px 0px 0px 0px #4e4e56, 0px 0px 0px 8px #da635d,
     5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.social {
+  margin-left: 30px;
 }
