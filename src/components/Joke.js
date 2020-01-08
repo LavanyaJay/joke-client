@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import PunchLine from "./PunchLine";
 import { observer } from "mobx-react";
-import { getJoke } from "../actions/joke";
+import { getJoke } from "../actions/joke.js";
+import { TwitterShareButton, TwitterIcon } from "react-share";
 const Joke = observer(
-  class Joke extends Component {
+  class JokeUI extends Component {
     state = { rendered: false, id: 0 };
 
     componentDidMount() {
@@ -26,25 +27,37 @@ const Joke = observer(
       this.setState({ id: newId });
       return newId;
     }
+
     render() {
       const { joke } = this.props;
-
+      const tweet = joke.joke + "\n" + joke.punchLine + "\n";
       const t = this.state.rendered ? (
         <div>
           <PunchLine punchLine={joke.punchLine} />
-          <button
-            onClick={() => {
-              this.handler();
+          <div className="lowerBar">
+            <button
+              onClick={() => {
+                this.handler();
 
-              getJoke(this.getId());
-              setTimeout(() => {
-                this.setState({ rendered: true });
-              }, 3000);
-            }}
-            className="btn"
-          >
-            Next Joke
-          </button>
+                getJoke(this.getId());
+                setTimeout(() => {
+                  this.setState({ rendered: true });
+                }, 3000);
+              }}
+              className="btn"
+            >
+              Next Joke
+            </button>
+
+            <TwitterShareButton
+              url="http://localhost:3000/"
+              title={tweet}
+              via="LJ"
+              className="social"
+            >
+              <TwitterIcon size={32} round />
+            </TwitterShareButton>
+          </div>
         </div>
       ) : null;
 
