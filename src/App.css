@@ -6,6 +6,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.nav {
+  margin-top: 30px;
+  margin-left: 780px;
+}
 .header {
   margin-left: 500px;
   margin-top: 10px;
@@ -15,7 +20,7 @@ body {
   width: 850px;
 
   margin-left: 200px;
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 30px;
@@ -98,5 +103,54 @@ body {
     5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .social {
-  margin-left: 30px;
+  margin-left: 90px;
+}
+.formClass {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+
+  height: 300px;
+  width: 450px;
+  margin-top: 100px;
+}
+
+.label {
+  width: 50px;
+}
+
+.input1,
+.input2,
+.input3 {
+  display: flex;
+
+  margin-bottom: 30px;
+}
+
+.textBox {
+  width: 100%;
+  padding: 12px 20px;
+}
+
+.buttonClass {
+  margin: auto;
+  text-align: center;
+  height: 40px;
+  width: 100px;
+  margin-bottom: 10px;
+  background: goldenrod;
+}
+
+.header {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.alert {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
 }

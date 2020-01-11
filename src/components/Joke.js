@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import PunchLine from "./PunchLine";
+import jokeStore from "../stores/joke.js";
 import { observer } from "mobx-react";
-import { getJoke } from "../actions/joke.js";
+import { getJoke, getTotalJokesCount } from "../actions/joke.js";
 import { TwitterShareButton, TwitterIcon } from "react-share";
 const Joke = observer(
   class JokeUI extends Component {
@@ -18,9 +19,11 @@ const Joke = observer(
     }
     getId() {
       let newId;
-
+      getTotalJokesCount();
+      let max = jokeStore.jokes.length;
+      console.log(max);
       do {
-        newId = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+        newId = Math.floor(Math.random() * (max - 1 + 1)) + 1;
       } while (newId === this.state.id);
       console.log("newId: " + newId);
       console.log("stateid: " + this.state.id);
@@ -55,7 +58,7 @@ const Joke = observer(
               via="LJ"
               className="social"
             >
-              <TwitterIcon size={32} round />
+              Share on <TwitterIcon size={32} round />
             </TwitterShareButton>
           </div>
         </div>
